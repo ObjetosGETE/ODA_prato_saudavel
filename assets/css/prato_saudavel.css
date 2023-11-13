@@ -19,6 +19,10 @@
   grid-column-gap: 0px;
   grid-row-gap: 0px;
 }
+.ODA_prato_saudavel .tela-2, .ODA_prato_saudavel .tela-3, .ODA_prato_saudavel .tela-4 {
+  display: flex;
+  justify-content: space-between;
+}
 .ODA_prato_saudavel .tela-2 .gride {
   background-image: url("../img/grid_1.jpg");
 }
@@ -53,9 +57,6 @@
   padding: 20px;
   height: 100%;
   width: 100%;
-}
-.ODA_prato_saudavel .tela:not(.tela-1, .tela-2) {
-  display: none;
 }
 .ODA_prato_saudavel .ui_btn {
   background-color: #ff9700;

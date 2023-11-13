@@ -1,3 +1,8 @@
+$('.tela-3').hide()
+$('.tela-4').hide()
+$('.tela-5').hide()
+
+
 $('.start_btn').click(function () {
     $('.tela-1').fadeOut();
     setTimeout(() => {

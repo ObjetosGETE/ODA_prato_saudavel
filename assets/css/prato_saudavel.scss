@@ -22,7 +22,10 @@ $color-2: #ff9700;
         grid-column-gap: 0px;
         grid-row-gap: 0px;
     }
-
+    .tela-2, .tela-3, .tela-4 {
+        display: flex;
+        justify-content: space-between;
+    }
     .tela-2 .gride {
         background-image: url('../img/grid_1.jpg');
     }
@@ -60,9 +63,7 @@ $color-2: #ff9700;
         height: 100%;
         width: 100%;
     }
-    .tela:not(.tela-1, .tela-2){
-        display: none;
-    }
+    
     .ui_btn {
         background-color: $color-2;
         border-radius: 10px;
