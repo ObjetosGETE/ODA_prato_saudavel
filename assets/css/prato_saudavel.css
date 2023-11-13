@@ -2,14 +2,14 @@
   width: 920px;
   height: 600px;
   border-radius: 20px;
+  background-color: rgba(0, 129, 138, 0.3);
   display: block;
   margin: 30px auto;
   position: relative;
 }
 .ODA_prato_saudavel .gride {
-  width: 100%;
-  max-width: 500px;
-  background-image: url("../img/img-1.jpg");
+  width: fit-content;
+  border: 1px solid #333;
   background-size: 100% 100%;
   padding: 0;
   margin: 0;
@@ -19,14 +19,24 @@
   grid-column-gap: 0px;
   grid-row-gap: 0px;
 }
+.ODA_prato_saudavel .tela-2 .gride {
+  background-image: url("../img/grid_1.jpg");
+}
+.ODA_prato_saudavel .tela-3 .gride {
+  background-image: url("../img/grid_2.jpg");
+  background-position: -20px;
+}
+.ODA_prato_saudavel .tela-4 .gride {
+  background-image: url("../img/grid_3.jpg");
+}
 .ODA_prato_saudavel .gride .row {
   margin-left: 0;
   margin-right: 0;
 }
 .ODA_prato_saudavel .gride .g-item {
   border: 1px solid #333;
-  height: 110px;
-  min-width: 110px;
+  height: 100px;
+  min-width: 100px;
   margin: 0;
   padding: 0;
   cursor: pointer;
@@ -43,7 +53,6 @@
   padding: 20px;
   height: 100%;
   width: 100%;
-  background-color: rgba(0, 129, 138, 0.3);
 }
 .ODA_prato_saudavel .tela:not(.tela-1, .tela-2) {
   display: none;
@@ -64,6 +73,9 @@
   transform: translateY(-2px);
   transition-duration: 0.2s;
   box-shadow: 2px 2px 2px #333;
+}
+.ODA_prato_saudavel .verificar_btn {
+  margin-left: 0;
 }
 .ODA_prato_saudavel .tela-1 {
   display: flex;

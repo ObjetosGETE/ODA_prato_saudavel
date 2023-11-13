@@ -5,15 +5,14 @@ $color-2: #ff9700;
     width: 920px;
     height: 600px;
     border-radius: 20px;
-    // background-color: #00828b;
+    background-color: rgba(0, 129, 138, .3);
     display: block;
     margin: 30px auto;
     position: relative;
-
+    
     .gride {
-        width: 100%;
-        max-width: 500px;
-        background-image: url("../img/img-1.jpg");
+        width: fit-content;
+        border: 1px solid #333;
         background-size: 100% 100%;
         padding: 0;
         margin: 0;
@@ -24,6 +23,17 @@ $color-2: #ff9700;
         grid-row-gap: 0px;
     }
 
+    .tela-2 .gride {
+        background-image: url('../img/grid_1.jpg');
+    }
+    .tela-3 .gride {
+        background-image: url('../img/grid_2.jpg');
+        background-position: -20px;
+    }
+    .tela-4 .gride {
+        background-image: url('../img/grid_3.jpg');
+    }
+
     .gride .row {
         margin-left: 0;
         margin-right: 0;
@@ -31,8 +41,8 @@ $color-2: #ff9700;
 
     .gride .g-item {
         border: 1px solid #333;
-        height: 110px;
-        min-width: 110px;
+        height: 100px;
+        min-width: 100px;
         margin: 0;
         padding: 0;
         cursor: pointer;
@@ -49,7 +59,6 @@ $color-2: #ff9700;
         padding: 20px;
         height: 100%;
         width: 100%;
-        background-color: rgba(0, 129, 138, .3)
     }
     .tela:not(.tela-1, .tela-2){
         display: none;
@@ -70,6 +79,9 @@ $color-2: #ff9700;
         transform: translateY(-2px);
         transition-duration: .2s;
         box-shadow: 2px 2px 2px #333;
+    }
+    .verificar_btn {
+        margin-left: 0;
     }
     .tela-1 {
         display: flex;

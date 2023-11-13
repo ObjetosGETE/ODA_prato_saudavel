@@ -7,13 +7,13 @@ $('.start_btn').click(function () {
 
 // Lógica do Objeto:
 let selected = 0;
-let corretos = 0;
-let errados = 0;
 
 $('.verificar_btn').click(function () {
     let telaAtual = $(this).parents('.tela')
     let proxTela = $(this).parents('.tela').next('.tela')
     let selecionadosArray = $('.selected')
+    let corretos = 0
+    let errados = 0
     console.log(selecionadosArray)
     for(let i=0; i<selecionadosArray.length;i++){
         if (selecionadosArray[i].classList.contains('cr')) {
@@ -22,14 +22,18 @@ $('.verificar_btn').click(function () {
             errados++
         }
     };
+    console.log('errados: ' + errados)
+    console.log('corretos: ' + corretos)
     if (errados > 0){
         console.log('whoops, try again!')
     }
-    if (errados == 0){
+    if (errados == 0 && selecionadosArray.length == 4){
+        console.log(selecionadosArray.length)
         telaAtual.fadeOut()
         setTimeout(() => {
             proxTela.fadeIn()
         }, 500)
+        $('.selected').removeClass('selected')
     }
 
 })
