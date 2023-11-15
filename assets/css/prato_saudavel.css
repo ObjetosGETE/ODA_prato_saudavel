@@ -7,6 +7,12 @@
   margin: 30px auto;
   position: relative;
 }
+.ODA_prato_saudavel h1 {
+  line-height: 2.5rem;
+}
+.ODA_prato_saudavel .tela-1 .start_msg p {
+  font-size: 22px;
+}
 .ODA_prato_saudavel .gride {
   width: fit-content;
   border: 1px solid #333;
@@ -19,9 +25,11 @@
   grid-column-gap: 0px;
   grid-row-gap: 0px;
 }
-.ODA_prato_saudavel .tela-2, .ODA_prato_saudavel .tela-3, .ODA_prato_saudavel .tela-4 {
+.ODA_prato_saudavel .tela-2,
+.ODA_prato_saudavel .tela-3,
+.ODA_prato_saudavel .tela-4 {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
 }
 .ODA_prato_saudavel .tela-2 .gride {
   background-image: url("../img/grid_1.jpg");
@@ -75,8 +83,13 @@
   transition-duration: 0.2s;
   box-shadow: 2px 2px 2px #333;
 }
-.ODA_prato_saudavel .verificar_btn {
-  margin-left: 0;
+.ODA_prato_saudavel .btn_row {
+  display: flex;
+  justify-content: space-between;
+}
+.ODA_prato_saudavel .verificar_btn,
+.ODA_prato_saudavel .ingredientes_btn {
+  margin: 15px 0;
 }
 .ODA_prato_saudavel .tela-1 {
   display: flex;
@@ -92,6 +105,47 @@
   border-radius: 15px;
   box-shadow: 3px 3px 3px #333;
   width: 80%;
+  text-align: center;
+}
+.ODA_prato_saudavel .modal_ingredientes {
+  background-color: white;
+  padding: 15px;
+  margin: 10px;
+  margin-right: 0;
+  box-shadow: 2px 2px 2px #333;
+  border-radius: 5px;
+  position: relative;
+}
+.ODA_prato_saudavel .modal_ingredientes p {
+  margin: 0;
+  line-height: 1.3rem;
+  display: flex;
+  align-items: center;
+}
+.ODA_prato_saudavel .modal_ingredientes .modal_cls_btn {
+  position: absolute;
+  right: 15px;
+  background-color: #ff9700;
+  border: none;
+  border-radius: 3px;
+  width: 30px;
+  height: 30px;
+  font-weight: 600;
+  transition-duration: 0.1s;
+}
+.ODA_prato_saudavel .modal_ingredientes .modal_cls_btn:hover {
+  transform: translateY(-1px);
+  transition-duration: 0.1s;
+  box-shadow: 1px 1px 1px #333;
+}
+.ODA_prato_saudavel .prato {
+  width: 85px;
+  height: auto;
+  margin: 5px;
+}
+.ODA_prato_saudavel .section-1,
+.ODA_prato_saudavel .section-2 {
+  padding-top: 40px;
 }
 
 /*# sourceMappingURL=prato_saudavel.css.map */

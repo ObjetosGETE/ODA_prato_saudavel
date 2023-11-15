@@ -1,7 +1,7 @@
 $('.tela-3').hide()
 $('.tela-4').hide()
 $('.tela-5').hide()
-
+$('.modal_ingredientes').hide()
 
 $('.start_btn').click(function () {
     $('.tela-1').fadeOut();
@@ -55,3 +55,11 @@ $('.g-item').click(function () {
         console.log('selected sqrs: ' + selected)
     }
 })
+
+$('.ingredientes_btn').click(function(){
+    $(this).parents('.tela').children('.section-2').children('.modal_ingredientes').fadeIn()
+})
+$('.modal_cls_btn').click(function(){
+    $(this).parents('.modal_ingredientes').fadeOut()
+})
+// resultado => (selecionados/corretos)*100
