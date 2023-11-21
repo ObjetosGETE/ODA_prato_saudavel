@@ -10,7 +10,7 @@
 .ODA_prato_saudavel h1 {
   line-height: 2.5rem;
 }
-.ODA_prato_saudavel .tela-1 .start_msg p {
+.ODA_prato_saudavel .tela-1 .start_msg p, .ODA_prato_saudavel .tela-5 .end_msg p {
   font-size: 22px;
 }
 .ODA_prato_saudavel .gride {
@@ -91,7 +91,7 @@
 .ODA_prato_saudavel .ingredientes_btn {
   margin: 15px 0;
 }
-.ODA_prato_saudavel .tela-1 {
+.ODA_prato_saudavel .tela-1, .ODA_prato_saudavel .tela-5 {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -99,7 +99,7 @@
   z-index: 10;
   background-color: rgba(0, 130, 139, 0.8);
 }
-.ODA_prato_saudavel .tela-1 .start_msg {
+.ODA_prato_saudavel .tela-1 .start_msg, .ODA_prato_saudavel .tela-5 .end_msg {
   background-color: rgba(255, 255, 255, 0.8);
   padding: 20px;
   border-radius: 15px;
@@ -146,6 +146,11 @@
 .ODA_prato_saudavel .section-1,
 .ODA_prato_saudavel .section-2 {
   padding-top: 40px;
+}
+.ODA_prato_saudavel .section-2 {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
 }
 
 /*# sourceMappingURL=prato_saudavel.css.map */
