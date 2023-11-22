@@ -128,20 +128,23 @@ $color-2: #ff9700;
         text-align: center;
     }
 
-    .modal_ingredientes {
+    .modal_ingredientes, .modal_resultado {
         background-color: white;
         padding: 15px;
         margin: 10px;
         margin-right: 0;
         box-shadow: 2px 2px 2px #333;
         border-radius: 5px;
-        position: relative;
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
 
         p {
             margin: 0;
             line-height: 1.3rem;
             display: flex;
             align-items: center;
+            font-size: 20px;
         }
 
         .modal_cls_btn {
@@ -162,6 +165,27 @@ $color-2: #ff9700;
             box-shadow: 1px 1px 1px #333;
         }
     }
+    .modal_resultado {
+        min-height: 300px;
+        min-width: 300px;
+        text-align: center;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        flex-direction: column;
+        padding: 20px;
+
+        p {
+            font-weight: 600;
+            font-size: 24px;
+            margin: 0;
+        }
+        h3 {
+            margin: 0;
+        }
+        
+    }
+
 
     .prato {
         width: 85px;
@@ -169,13 +193,7 @@ $color-2: #ff9700;
         margin: 5px;
     }
 
-    .section-1,
-    .section-2 {
+    .section-1 {
         padding-top: 40px;
-    }
-    .section-2 {
-        position: absolute;
-        left: 50%;
-        transform: translateX(-50%);
     }
 }
