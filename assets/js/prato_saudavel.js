@@ -13,8 +13,9 @@ $('.start_btn').click(function () {
 
 // Lógica do Objeto:
 let selected = 0;
-let corretos = 0
+let corretosTotal = 0;
 $('.verificar_btn').click(function () {
+    let corretos = 0;
     let telaAtual = $(this).parents('.tela')
     let modal = telaAtual.children('.modal_resultado')
     let selecionadosArray = $('.selected')
@@ -25,6 +26,7 @@ $('.verificar_btn').click(function () {
     for (let i = 0; i < selecionadosArray.length; i++) {
         if (selecionadosArray[i].classList.contains('cr')) {
             corretos++
+            corretosTotal++
         } else {
             errados++
         }
