@@ -1,5 +1,6 @@
 .ODA_prato_saudavel {
   width: 920px;
+  max-width: 100%;
   height: 600px;
   border-radius: 20px;
   background-color: rgba(0, 129, 138, 0.3);
@@ -25,6 +26,7 @@
   grid-template-rows: repeat(4, 1fr);
   grid-column-gap: 0px;
   grid-row-gap: 0px;
+  max-width: 100%;
 }
 .ODA_prato_saudavel .tela-2,
 .ODA_prato_saudavel .tela-3,
@@ -49,7 +51,7 @@
 .ODA_prato_saudavel .gride .g-item {
   border: 1px solid #333;
   height: 100px;
-  min-width: 100px;
+  width: 100px;
   margin: 0;
   padding: 0;
   cursor: pointer;
@@ -182,6 +184,28 @@
   text-align: center;
   margin-top: 0;
   font-weight: 600;
+}
+.ODA_prato_saudavel .disabled {
+  pointer-events: none;
+  opacity: 0.7;
+}
+
+@media (max-width: 600px) {
+  .ODA_prato_saudavel .gride .g-item {
+    width: 75px;
+    height: 75px;
+  }
+  .ODA_prato_saudavel .modal_ingredientes,
+  .ODA_prato_saudavel .modal_resultado {
+    width: 100%;
+    margin: auto;
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
+  .ODA_prato_saudavel .modal_ingredientes p,
+  .ODA_prato_saudavel .modal_resultado p {
+    margin-top: 30px;
+  }
 }
 
 /*# sourceMappingURL=prato_saudavel.css.map */

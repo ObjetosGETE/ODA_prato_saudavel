@@ -46,6 +46,7 @@ $('.next_btn').click(function(){
         proxTela.fadeIn()
     }, 500)
     $('.selected').removeClass('selected')
+    selected = 0;
     if(telaAtual.hasClass('tela-4')){
         // resultado => (selecionados/corretos)*100
         $('.pontuacao span').text((corretos/16)*100)
@@ -62,6 +63,13 @@ $('.g-item').click(function () {
         item.addClass('selected')
         selected++
         console.log('selected sqrs: ' + selected)
+    }
+    let verificar_btn = $(this).parents('.section-1').children('.btn_row').children('.verificar_btn');
+    console.log(verificar_btn)
+    if(selected>0){
+        verificar_btn.removeClass('disabled');
+    } else if(selected==0){
+        verificar_btn.addClass('disabled');
     }
 })
 
