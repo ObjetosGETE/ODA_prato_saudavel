@@ -14,13 +14,24 @@ $('.start_btn').click(function () {
 // Lógica do Objeto:
 let selected = 0;
 let corretosTotal = 0;
+$('.tente_nv').click(function () {
+    selected = 0;
+    corretosTotal = 0;
+    $('.tela').fadeOut();
+    $('.modal_ingredientes').hide();
+    $('.modal_resultado').hide();
+    setTimeout(() => {
+        $('.tela-2').fadeIn()
+        $('.tela-1').fadeIn()
+    }, 500)
+})
 $('.verificar_btn').click(function () {
     let corretos = 0;
     let telaAtual = $(this).parents('.tela')
     let modal = telaAtual.children('.modal_resultado')
     let selecionadosArray = $('.selected')
-    
-    
+
+
     let errados = 0
     console.log(selecionadosArray)
     for (let i = 0; i < selecionadosArray.length; i++) {
@@ -36,9 +47,9 @@ $('.verificar_btn').click(function () {
     console.log('errados: ' + errados)
     console.log('corretos: ' + corretos)
     console.log(selecionadosArray.length)
-    
+
 })
-$('.next_btn').click(function(){
+$('.next_btn').click(function () {
     let telaAtual = $(this).parents('.tela')
     let proxTela = $(this).parents('.tela').next('.tela')
     telaAtual.fadeOut()
@@ -47,9 +58,9 @@ $('.next_btn').click(function(){
     }, 500)
     $('.selected').removeClass('selected')
     selected = 0;
-    if(telaAtual.hasClass('tela-4')){
+    if (telaAtual.hasClass('tela-4')) {
         // resultado => (selecionados/corretos)*100
-        $('.pontuacao span').text((corretosTotal/16)*100)
+        $('.pontuacao span').text((corretosTotal / 16) * 100)
     }
 })
 
@@ -66,9 +77,9 @@ $('.g-item').click(function () {
     }
     let verificar_btn = $(this).parents('.section-1').children('.btn_row').children('.verificar_btn');
     console.log(verificar_btn)
-    if(selected>0){
+    if (selected > 0) {
         verificar_btn.removeClass('disabled');
-    } else if(selected==0){
+    } else if (selected == 0) {
         verificar_btn.addClass('disabled');
     }
 })
