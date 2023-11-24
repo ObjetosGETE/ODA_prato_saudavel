@@ -49,7 +49,7 @@ $('.next_btn').click(function(){
     selected = 0;
     if(telaAtual.hasClass('tela-4')){
         // resultado => (selecionados/corretos)*100
-        $('.pontuacao span').text((corretos/16)*100)
+        $('.pontuacao span').text((corretosTotal/16)*100)
     }
 })
 
