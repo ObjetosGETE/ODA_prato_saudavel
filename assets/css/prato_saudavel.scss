@@ -14,7 +14,8 @@ $color-2: #ff9700;
         line-height: 2.5rem;
     }
 
-    .tela-1 .start_msg p, .tela-5 .end_msg p {
+    .tela-1 .start_msg p,
+    .tela-5 .end_msg p {
         font-size: 22px;
     }
 
@@ -110,7 +111,8 @@ $color-2: #ff9700;
         margin: 15px 0;
     }
 
-    .tela-1, .tela-5 {
+    .tela-1,
+    .tela-5 {
         display: flex;
         justify-content: center;
         align-items: center;
@@ -119,7 +121,8 @@ $color-2: #ff9700;
         background-color: rgba($color: $color-1, $alpha: .8);
     }
 
-    .tela-1 .start_msg, .tela-5 .end_msg {
+    .tela-1 .start_msg,
+    .tela-5 .end_msg {
         background-color: rgba($color: white, $alpha: .8);
         padding: 20px;
         border-radius: 15px;
@@ -128,7 +131,8 @@ $color-2: #ff9700;
         text-align: center;
     }
 
-    .modal_ingredientes, .modal_resultado {
+    .modal_ingredientes,
+    .modal_resultado {
         background-color: white;
         padding: 15px;
         margin: 10px;
@@ -166,6 +170,7 @@ $color-2: #ff9700;
             box-shadow: 1px 1px 1px #333;
         }
     }
+
     .modal_resultado {
         min-height: 300px;
         min-width: 300px;
@@ -181,10 +186,11 @@ $color-2: #ff9700;
             font-size: 24px;
             margin: 0;
         }
+
         h3 {
             margin: 0;
         }
-        
+
     }
 
 
@@ -195,6 +201,15 @@ $color-2: #ff9700;
     }
 
     .section-1 {
-        padding-top: 40px;
+        padding-top: 12px;
+        width: 402px;
+    }
+
+    .enunciado {
+        color: #333;
+        line-height: 1.4rem;
+        text-align: center;
+        margin-top: 0;
+        font-weight: 600;
     }
 }
